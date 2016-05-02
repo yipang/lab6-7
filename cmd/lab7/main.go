@@ -37,10 +37,11 @@ func main() {
 	})
 
 	router.GET("/db", func(c *gin.Context) {
-		if db != nil {
-			c.JSON(http.StatusOK, gin.H{"message": "db created"})
-		} else {
+		ping := db.Ping()
+		if ping != nil {
 			c.JSON(http.StatusOK, gin.H{"message": "db was not created. Check your DATABASE_URL"})
+		} else {
+			c.JSON(http.StatusOK, gin.H{"message": "db created"})
 		}
 	})
 
