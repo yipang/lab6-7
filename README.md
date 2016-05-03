@@ -21,6 +21,7 @@ Lab materials for 6 + 7
     >   4. `git clone https://github.com/YOUR-USERNAME-HERE/lab6-7`
     >   5. ~~`cd lab6-7/cmd/lab7`~~
     >   6. ~~`go install`~~
+    
 If you run into any issues with these steps, especially if you get an issue with "go cannot find GOPATH" or something similar, follow [these steps on setting up Go](https://github.com/uw-info340b-sp2016/course/blob/master/guides/mac_env.md)
 
 ### Assignment
