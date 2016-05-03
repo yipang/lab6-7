@@ -19,7 +19,7 @@ Lab materials for 6 + 7
     >   2. `mkdir YOUR_GITHUB_USERNAME`
     >   3. `cd YOUR_GITHUB_USERNAME`
     >   4. `git clone https://github.com/YOUR-USERNAME-HERE/lab6-7`
-    >   5. `cd lab6-7/cmd/site`
+    >   5. `cd lab6-7/cmd/lab7`
     >   6. `go install`
 
 ### Assignment
