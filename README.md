@@ -11,7 +11,7 @@ Lab materials for 6 + 7
 3. Make sure Go is installed on your machine using `go version`, if not [use this tutorial](https://golang.org/doc/install)
 4. If you run into any issues, check [heroku's help center](https://devcenter.heroku.com/articles/getting-started-with-go#introduction)
 5. Fork the lab repo at https://github.com/uw-info340b-sp2016/lab6-7 by going to the page and clicking the "fork" button. **Don't clone this repo! You won't be able to push to it, which is required to turn in your assignment!**
-6. Clone your newly forked repo from https://github.com/YOUR-USERNAME-HERE/lab6-7 to your machine using </br>`go get github.com/YOUR_GITHUB_USERNAME/lab6-7`
+6. ~~Clone your newly forked repo from https://github.com/YOUR-USERNAME-HERE/lab6-7 to your machine using </br>`go get github.com/YOUR_GITHUB_USERNAME/lab6-7`~~ Skip this and use the below steps
 
     > This step is the same as: (replace $GOPATH with %GOPATH% on windows)
     >   1. `cd $GOPATH/src/github.com`
@@ -19,8 +19,8 @@ Lab materials for 6 + 7
     >   2. `mkdir YOUR_GITHUB_USERNAME`
     >   3. `cd YOUR_GITHUB_USERNAME`
     >   4. `git clone https://github.com/YOUR-USERNAME-HERE/lab6-7`
-    >   5. `cd lab6-7/cmd/lab7`
-    >   6. `go install`
+    >   5. ~~`cd lab6-7/cmd/lab7`~~
+    >   6. ~~`go install`~~
 
 ### Assignment
 > For this assignment we will be using a new tool known as [PostgreSQL](http://www.postgresql.org/). This is different than SQLite in many ways, which, if you are interested, you can find out the [exact differences at this site](http://www.sql-workbench.net/dbms_comparison.html). Postgres is much better than SQLite in pretty much every way. It stores more datatypes, is well optimized, better checks on input, the list goes on. However, SQLite has a **much** smaller file size than Postgres so SQLite is best when you want one local DB running on a phone or simple desktop app. You only really want to use Postgres when you have a server running the DB, although there is nothing stopping you from running a local instance of Postgres.
