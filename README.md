@@ -21,6 +21,7 @@ Lab materials for 6 + 7
     >   4. `git clone https://github.com/YOUR-USERNAME-HERE/lab6-7`
     >   5. ~~`cd lab6-7/cmd/lab7`~~
     >   6. ~~`go install`~~
+If you run into any issues with these steps, especially if you get an issue with "go cannot find GOPATH" or something similar, follow [these steps on setting up Go](https://github.com/uw-info340b-sp2016/course/blob/master/guides/mac_env.md)
 
 ### Assignment
 > For this assignment we will be using a new tool known as [PostgreSQL](http://www.postgresql.org/). This is different than SQLite in many ways, which, if you are interested, you can find out the [exact differences at this site](http://www.sql-workbench.net/dbms_comparison.html). Postgres is much better than SQLite in pretty much every way. It stores more datatypes, is well optimized, better checks on input, the list goes on. However, SQLite has a **much** smaller file size than Postgres so SQLite is best when you want one local DB running on a phone or simple desktop app. You only really want to use Postgres when you have a server running the DB, although there is nothing stopping you from running a local instance of Postgres.
