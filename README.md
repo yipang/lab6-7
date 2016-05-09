@@ -57,4 +57,12 @@ If you run into any issues with these steps, especially if you get an issue with
 If you've gotten this far you are done for lab 6! I know it was a lot of setup, copying + pasting, and other boring things, but this is important as setting this stuff up takes quite a bit of time. Lab 7 will have you actually working with this database and application. For now though, there is nothing to turn in.
 
 ## Lab 7:
-Instructions coming soon....
+
+#### Update your fork with my changes
+Run the following command *once* within your local reop. Once you do this you won't have to do it again (unless you work on lab machines)
+`git remote add upstream https://github.com/uw-info340b-sp2016/lab6-7.git`
+
+Then run the following command every time you want to get changes that I made in my repo
+`git pull upstream master`
+
+Depending on your text editor you may need to write a commit. In nano is is CTRL+O, CTRL+X and in vim this is :wq. There shouldn't be any merge conflicts, depending on what changes you made to the HTML.
