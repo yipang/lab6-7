@@ -6,18 +6,15 @@ $(function(){
     }, "json")
 
     $.get("/query1", function(data){
-        $("#results").append(data.message);
-    }, "json")
+        $("#firstQuery").append(data);
+    }, "html")
 
     $.get("/query2", function(data){
-        $("#results").append(data.message);
-    }, "json")
+        $("#secondQuery").append(data);
+    }, "html")
 
     $.get("/query3", function(data){
-        $("#results").append(data.message);
-    }, "json")
+        $("#thirdQuery").append(data);
+    }, "html")
 
-    $.get("/query4", function(data){
-        $("#results").append(data.message);
-    }, "json")
 })
