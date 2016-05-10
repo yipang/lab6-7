@@ -86,6 +86,7 @@ In this lab you will be doing 2 things. First, you will plan out then create som
 6. Turn in a link to your webpage and a link to your github repo
 
 I also suggest running your application before pushing it to heroku, to make sure it works. You can do this by doing the following:
+
 1. Create a new file in your project folder named `.env` then edit that file to include the line `DATABASE_URL=postgres://fj8xc9ejsdf:-asdfjisd...` replacing that with your actual URL
 2. Run `cd cmd/lab7` from inside your project folder, then `go install`
 3. Open a command prompt and run `heroku local`
