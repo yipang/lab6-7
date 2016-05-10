@@ -85,13 +85,15 @@ In this lab you will be doing 2 things. First, you will plan out then create som
 5. Make sure this is displayed properly in your webpage, this includes adding in your question above your results
 6. Turn in a link to your webpage and a link to your github repo
 
-I also suggest running your application before pushing it to heroku, to make sure it works. You can do this by doing two things:
+I also suggest running your application before pushing it to heroku, to make sure it works. You can do this by doing the following:
 1. Create a new file in your project folder named `.env` then edit that file to include the line `DATABASE_URL=postgres://fj8xc9ejsdf:-asdfjisd...` replacing that with your actual URL
-2. Open a command prompt and run `heroku local`
+2. Run `cd cmd/lab7` from inside your project folder, then `go install`
+3. Open a command prompt and run `heroku local`
+4. If you get an error, add `export PATH=$PATH:$GOPATH/bin` to your bash startup script (`nano ~/.bash_profile` on mac, edit environment variables on Windows changing `:` to `;`)
 
 ##### Errors
 If you get an error from *Go* then you can use the command `go get ...` adding in the package you are missing. For this project, these are `go get github.com/gin-gonic/gin` and `go get github.com/lib/pq`
 
-If you need to install your local app on your machine (you shouldn't) then navigate into the lab6-7/cmd/lab7 folder and run `go install`
+If you need to install your local app on your machine then navigate into the lab6-7/cmd/lab7 folder and run `go install`
 
 If *Heroku* complains about a missing package, run `go get github.com/tools/godep` then `godep save ./...` If that fails, run `$GOPATH/bin/godep save ./...` (use %GOPATH% for windows)
