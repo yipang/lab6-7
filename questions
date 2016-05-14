@@ -1,0 +1,6 @@
+Q1: show the songs released before 2015-06-01
+A1: SELECT title FROM Song NATURAL JOIN Album WHERE julianday(releaseDate) < julianday("2015-01-01");
+Q2: show all the songs sung by artists age under 25
+A2: SELECT title FROM Song JOIN Album ON albumId = albumId JOIN Artist ON artistId = artistId WHERE Artist.age < 25;
+Q3: show all the favorite people live in Seatle
+A3: SELECT firstName FROM Person WHERE city = "Seattle"; 
